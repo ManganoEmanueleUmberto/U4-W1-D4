@@ -14,6 +14,6 @@ public class Volontario implements CheckIn {
     }
 
     public void checkIn() {
-        System.out.println("Check In effettuato");
+        System.out.println(nome + " Check In effettuato");
     }
 }

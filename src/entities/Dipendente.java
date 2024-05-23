@@ -35,8 +35,8 @@ public abstract class Dipendente implements CheckIn {
         return dipartimento;
     }
 
-    public void setDipartimento(Dipartimenti dipartimento) {
-        this.dipartimento = dipartimento;
+    public void setDipartimento(String dipartimento) {
+        this.dipartimento = Dipartimenti.valueOf(dipartimento);
     }
 
     public void printMatricola() {
@@ -44,6 +44,6 @@ public abstract class Dipendente implements CheckIn {
     }
 
     public void checkIn() {
-        System.out.println("Check In effettuato");
+        System.out.println("Matricola N°: " + matricola + " Check In effettuato");
     }
 }
